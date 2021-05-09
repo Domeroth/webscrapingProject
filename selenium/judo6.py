@@ -2,8 +2,10 @@ from selenium import webdriver
 import pandas as pd
 import csv
 import re
+import time
 
 limitPages = True
+start = time.time()
 gecko_path = '/usr/local/bin/geckodriver'
 
 options = webdriver.firefox.options.Options()
@@ -81,3 +83,5 @@ d.to_csv("results.csv", index=False)
 
 # Close browser:
 driver.quit()
+end = time.time()
+print(end - start)
