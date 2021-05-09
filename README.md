@@ -11,8 +11,11 @@ scrapy:
 put spiders into spiders folder
 
 run
+
 scrapy crawl country_list -O countries.csv
+
 scrapy crawl judoka_list -O athletes.csv
+
 scrapy crawl judoka -O results.csv
 
 First spider gathers information from the main page country dropdown
@@ -20,3 +23,8 @@ Second spider uses information from the first spider, and for each country gathe
 Third spider visits each of the competitors site, and gathers information about them
 
 Three files are created - each with the information gathered by a relevant spider
+
+selenium: 
+run judo5.py 
+and then run
+judo6.py
