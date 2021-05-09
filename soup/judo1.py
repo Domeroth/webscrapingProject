@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup as BS, NavigableString
 import pandas as pd
 import time
 
-limitPages = False
+limitPages = True
 
 start = time.time()
 # Look at the page and the code
